@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Independent affiliate guide to the Canon RF 16-28mm F2.8 IS STM ultra-wide zoom lens for Canon EOS R full-frame mirrorless cameras.">
+<meta name="robots" content="index,follow">
+<title>Canon RF 16-28mm F2.8 STM — The Wide View, Mapped</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EFF2EE;
+  --paper2:#E6EAE3;
+  --ink:#12181A;
+  --ink-soft:#4a524e;
+  --blue:#2C5F86;
+  --blue-deep:#16354C;
+  --rust:#B85C2C;
+  --line:rgba(18,24,26,.16);
+  --grid:rgba(44,95,134,.09);
+  --max:1180px;
+  --display:"Space Grotesk",Arial,sans-serif;
+  --body:"IBM Plex Sans",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+.grid-bg{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:34px 34px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.eyebrow:before{content:"";width:8px;height:8px;border:1.5px solid var(--rust);border-radius:50%}
+
+/* affiliate disclosure micro-text used beside every CTA */
+.aff-note{display:block;font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);letter-spacing:.02em;margin-top:9px}
+.aff-note.light{color:rgba(239,242,238,.62)}
+.aff-tag{display:inline-block;font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--rust);border:1px solid var(--rust);border-radius:3px;padding:2px 6px;margin-left:9px;vertical-align:middle}
+
+/* header */
+.header{position:sticky;top:0;z-index:100;background:rgba(239,242,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-family:var(--display);font-size:19px;font-weight:700;letter-spacing:-.01em}
+.logo span{font-family:var(--mono);font-size:10px;color:var(--blue);letter-spacing:.14em;margin-left:8px;font-weight:500}
+.nav-links{display:flex;gap:26px;font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.04em;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-cta-wrap{display:flex;flex-direction:column;align-items:flex-end}
+.nav-cta{background:var(--rust);color:#fff;padding:9px 15px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.05em;border-radius:2px}
+.nav-cta-note{font-family:var(--mono);font-size:8.5px;color:var(--ink-soft);margin-top:4px;letter-spacing:.02em}
+.menu-toggle{display:none;background:none;border:0;color:var(--ink);font-size:22px;cursor:pointer}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:76px 0 60px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,5.4vw,66px);line-height:1.03;letter-spacing:-.03em;margin:16px 0 20px}
+.hero h1 em{color:var(--rust);font-style:normal}
+.hero-copy{max-width:520px;color:var(--ink-soft);font-size:16.5px;line-height:1.75}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.04em;border-radius:2px;transition:.2s ease;border:1px solid transparent}
+.btn-primary{background:var(--rust);color:#fff}
+.btn-primary:hover{background:#9a4c22;transform:translateY(-2px)}
+.btn-outline{border:1px solid var(--line);color:var(--ink)}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:flex-start}
+.hero-buttons-col{display:flex;flex-direction:column}
+
+/* signature: angle-of-view blueprint diagram */
+.diagram-stage{position:relative;min-height:440px;display:grid;place-items:center}
+.diagram-stage svg{width:100%;max-width:480px;height:auto}
+.diagram-caption{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase;text-align:center}
+
+/* spec plate */
+.plate{background:var(--blue-deep);color:var(--paper)}
+.plate-inner{padding:40px 0;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(239,242,238,.12)}
+.plate-cell{background:var(--blue-deep);padding:16px 14px;text-align:center}
+.plate-cell strong{display:block;font-family:var(--display);font-size:23px;font-weight:600}
+.plate-cell span{display:block;font-family:var(--mono);font-size:9px;color:rgba(239,242,238,.55);letter-spacing:.1em;text-transform:uppercase;margin-top:5px}
+
+/* sections */
+.section{padding:96px 0}
+.section-alt{background:var(--paper2)}
+.section-head{max-width:700px;margin-bottom:48px}
+.section-head h2{font-family:var(--display);font-weight:600;font-size:clamp(32px,4.2vw,50px);line-height:1.08;letter-spacing:-.025em;margin-top:12px}
+.section-head p{color:var(--ink-soft);margin-top:14px;font-size:15.5px;max-width:620px}
+
+/* diagram key / feature spec table (letters, not numbers — mirrors a real drawing key) */
+.key-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}
+.key-diagram{border:1px solid var(--line);background:var(--paper);padding:28px}
+.key-diagram svg{width:100%;height:auto}
+.key-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.key-row{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.key-letter{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--rust);border:1px solid var(--rust);border-radius:50%;width:30px;height:30px;display:grid;place-items:center}
+.key-row h3{font-family:var(--display);font-size:18.5px;font-weight:600;margin-bottom:5px}
+.key-row p{color:var(--ink-soft);font-size:13.8px;line-height:1.65}
+
+/* use cases */
+.use-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.use-card{background:var(--paper2);padding:26px 22px;min-height:150px}
+.use-card strong{display:block;font-family:var(--display);font-size:19px;font-weight:600;margin-bottom:7px}
+.use-card span{color:var(--ink-soft);font-size:13px;line-height:1.6}
+
+/* mid-page cta strip */
+.strip{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:38px 0}
+.strip-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.strip-copy p{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);letter-spacing:.02em}
+.strip-copy strong{display:block;font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:4px}
+
+/* final cta */
+.cta{text-align:center;padding:100px 0;background:var(--blue-deep);color:var(--paper);position:relative}
+.cta h2{font-family:var(--display);font-weight:600;font-size:clamp(34px,4.6vw,54px);line-height:1.08;max-width:780px;margin:12px auto 16px}
+.cta p{max-width:600px;margin:auto;color:rgba(239,242,238,.68);font-size:14.5px}
+.cta .btn{margin-top:26px}
+.disclosure{font-family:var(--mono);font-size:11px;line-height:1.8;color:var(--ink-soft);max-width:900px;margin:0 auto 36px;padding:18px;border:1px solid var(--line);background:var(--paper2)}
+
+footer{background:var(--paper2);border-top:1px solid var(--line);padding:56px 0 26px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--line)}
+.footer-brand{font-family:var(--display);font-size:20px;font-weight:600}
+.footer-desc,.footer-col a{color:var(--ink-soft);font-size:13px;line-height:1.7}
+.footer-desc{max-width:340px;margin-top:12px}
+.footer-col h4{font-family:var(--mono);font-size:10px;color:var(--rust);letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.footer-col a{display:block;margin-bottom:8px}
+.footer-col a:hover{color:var(--ink)}
+.footer-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:22px;color:#7c837e;font-family:var(--mono);font-size:10.5px}
+
+
+/* ===== Premium Hero Redesign ===== */
+.hero{
+  background:linear-gradient(135deg,#f7f7f3 0%,#eef2ee 100%);
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+.hero-product-image{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:500px;
+}
+.hero-product-image::before{
+  content:"";
+  position:absolute;
+  width:420px;height:420px;
+  border-radius:50%;
+  background:radial-gradient(circle,#dfe8f0 0%,transparent 70%);
+  z-index:0;
+}
+.hero-product-image img{
+  position:relative;
+  z-index:2;
+  width:100%;
+  max-width:520px;
+  filter:drop-shadow(0 30px 40px rgba(0,0,0,.18));
+}
+.image-label{
+  position:absolute;
+  bottom:20px;
+  background:#16354C;
+  color:#fff;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:10px;
+  font-family:var(--mono);
+  letter-spacing:.08em;
+}
+.hero-copy{font-size:17px;line-height:1.8}
+.hero h1 em{color:#B85C2C}
+
+/* ===== Under Barrel Premium Layout ===== */
+.product-detail-image{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+.product-detail-image img{
+  width:100%;
+  display:block;
+  border-radius:16px;
+}
+.detail-caption{
+  margin-top:14px;
+  text-align:center;
+  font-family:var(--mono);
+  font-size:10px;
+  color:#4a524e;
+  letter-spacing:.08em;
+}
+.key-row{
+  background:#fff;
+  padding:22px;
+  border-radius:18px;
+  margin-bottom:12px;
+  border:1px solid rgba(0,0,0,.05);
+}
+.use-card{
+  border-radius:18px;
+  transition:.25s;
+}
+.use-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 30px rgba(0,0,0,.08);
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+}
+
+@media(max-width:900px){
+  .nav-links{display:none}.menu-toggle{display:block}.nav-cta-wrap{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:26px}
+  .diagram-stage{order:-1;min-height:320px}
+  .plate-inner{grid-template-columns:repeat(3,1fr)}
+  .key-layout{grid-template-columns:1fr}
+  .use-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .container{width:min(calc(100% - 26px),var(--max))}
+  .hero h1{font-size:38px}
+  .plate-inner{grid-template-columns:repeat(2,1fr)}
+  .use-grid{grid-template-columns:1fr}
+  .section{padding:68px 0}
+  .footer-grid{grid-template-columns:1fr}
+  .strip-inner{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#top">CANON RF <span>16–28mm F2.8</span></a>
+    <nav class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#specs">Specs</a>
+      <a href="#diagram">Build</a>
+      <a href="#uses">Use cases</a>
+    </nav>
+    <div class="nav-right">
+      <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+      <div class="nav-cta-wrap">
+        
+      </div>
+    </div>
+  </div>
+  <div id="mobileMenu" style="display:none;background:var(--paper2);border-top:1px solid var(--line)">
+    <div class="container" style="padding:16px 0 20px;display:grid;gap:14px;font-family:var(--mono);font-size:12px;letter-spacing:.04em">
+      <a href="#overview" onclick="toggleMenu()">Overview</a>
+      <a href="#specs" onclick="toggleMenu()">Specs</a>
+      <a href="#diagram" onclick="toggleMenu()">Build</a>
+      <a href="#uses" onclick="toggleMenu()">Use cases</a>
+      <a href="https://link.amazon/B0dogBd5F" target="_blank" rel="nofollow sponsored noopener" style="color:var(--rust)">View on Amazon →</a>
+      <span class="aff-note">Affiliate link · we may earn a commission at no cost to you</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero grid-bg" id="overview">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Canon RF Mount · Full-Frame Ultra-Wide Zoom</div>
+      <h1>See the whole<br><em>room, edge to edge.</em></h1>
+      <p class="hero-copy">The Canon RF 16-28mm F2.8 IS STM widens your field of view to 108° at the short end and holds a constant f/2.8 all the way to 28mm — a compact, weather-resistant zoom built for interiors, landscapes and low light, without the size or price of an L-series lens.</p>
+      <div class="hero-buttons">
+        <div class="hero-buttons-col">
+          <a class="btn btn-primary" href="https://link.amazon/B0dogBd5F" target="_blank" rel="nofollow sponsored noopener">Check price on Amazon →</a>
+          <span class="aff-note">Affiliate link · if you buy through this page, we may earn a qualifying commission at no extra cost to you.</span>
+        </div>
+        <a class="btn btn-outline" href="#specs">See full specs</a>
+      </div>
+    </div>
+
+    <div class="hero-product-image">
+      <img src="images/h1.png" alt="Canon RF 16-28mm F2.8 IS STM Lens">
+      
+    </div>
+
+  </div>
+</section>
+
+<section class="plate">
+  <div class="container plate-inner">
+    <div class="plate-cell"><strong>16–28mm</strong><span>Zoom range</span></div>
+    <div class="plate-cell"><strong>F2.8</strong><span>Constant aperture</span></div>
+    <div class="plate-cell"><strong>5.5 stops</strong><span>Image stabilization</span></div>
+    <div class="plate-cell"><strong>445g</strong><span>Approx. weight</span></div>
+    <div class="plate-cell"><strong>108°</strong><span>Widest diagonal AoV</span></div>
+  </div>
+</section>
+
+<section class="section" id="specs">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Why this range</div>
+      <h2>An ultra-wide zoom that stays out of your way.</h2>
+      <p>The 16-28mm range covers the two focal lengths wide-angle shooters reach for most, and the fixed f/2.8 aperture means exposure doesn't shift as you zoom — useful for both stills and run-and-gun video.</p>
+    </div>
+    <div class="use-grid">
+      <div class="use-card"><strong>F2.8 throughout</strong><span>Same bright aperture from 16mm to 28mm, so exposure stays predictable while zooming.</span></div>
+      <div class="use-card"><strong>Retracts to 91mm</strong><span>Collapses down for storage and carry, then extends for shooting — a genuinely packable ultra-wide.</span></div>
+      <div class="use-card"><strong>Weather-resistant</strong><span>Sealed construction designed to handle dust and light moisture on location.</span></div>
+      <div class="use-card"><strong>~20cm close focus</strong><span>Get close at the 28mm end for foreground-heavy, deep-perspective compositions.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="diagram">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Under the barrel</div>
+      <h2>Five things doing the work.</h2>
+      <p>A simplified key to what's built into the lens — matched to the labelled points on the diagram.</p>
+    </div>
+    <div class="key-layout">
+      
+<div class="key-diagram product-detail-image">
+  <img src="images/h3.png" alt="Canon RF 16-28mm lens close-up">
+  <div class="detail-caption">UNDER THE BARREL · OPTICAL DESIGN</div>
+</div>
+<div class="key-list">
+
+        <div class="key-row"><div class="key-letter">A</div><div><h3>Control ring</h3><p>A dedicated customisable ring near the mount for quick access to exposure or focus settings.</p></div></div>
+        <div class="key-row"><div class="key-letter">B</div><div><h3>Leadscrew STM motor</h3><p>Drives fast, quiet autofocus for both stills and video, with Eye Detection AF on compatible EOS R bodies.</p></div></div>
+        <div class="key-row"><div class="key-letter">C</div><div><h3>4 UD + 2 aspheric elements</h3><p>Optical elements aimed at controlling distortion and chromatic aberration across the zoom range.</p></div></div>
+        <div class="key-row"><div class="key-letter">D</div><div><h3>Large front element</h3><p>Gathers more light for the wide aperture and accepts slim-profile filters despite the ultra-wide coverage.</p></div></div>
+        <div class="key-row"><div class="key-letter">E</div><div><h3>5.5-stop image stabilization</h3><p>In-lens IS that can combine with in-body stabilization on supported cameras for steadier handheld shots.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="container strip-inner">
+    <div class="strip-copy">
+      <strong>Still deciding?</strong>
+      <p>Prices and stock on Amazon change often — worth a quick check before you commit.</p>
+    </div>
+    <div class="hero-buttons-col">
+      <a class="btn btn-outline" href="https://link.amazon/B0dogBd5F" target="_blank" rel="nofollow sponsored noopener">View current listing →</a>
+      <span class="aff-note">Affiliate link · we may earn a commission if you purchase.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="uses">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Good fit for</div>
+      <h2>One zoom, several jobs.</h2>
+      <p>The 16-28mm range is narrow enough to stay useful, wide enough to change how a scene reads.</p>
+    </div>
+    <div class="use-grid">
+      <div class="use-card"><strong>Interiors & real estate</strong><span>Fit more of a room in frame without stepping through a wall.</span></div>
+      <div class="use-card"><strong>Landscape</strong><span>Wide enough for sweeping scenes, with 28mm on hand for tighter framing.</span></div>
+      <div class="use-card"><strong>Astro & low light</strong><span>The constant f/2.8 aperture helps gather light for night and starfield shots.</span></div>
+      <div class="use-card"><strong>Travel & vlogging</strong><span>Compact, retractable, and wide enough for arm's-length video.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="eyebrow" style="color:#8fb6d1">Ready to compare?</div>
+    <h2>See the current price, availability and seller details on Amazon.</h2>
+    <p>Product information and availability can change. Check the listing directly before you decide.</p>
+    <a class="btn btn-primary" href="https://link.amazon/B0dogBd5F" target="_blank" rel="nofollow sponsored noopener">Check Canon RF 16-28mm F2.8 on Amazon →</a>
+    <span class="aff-note light" style="display:block;margin-top:12px">Affiliate link · if you purchase through this page, we may earn a qualifying commission at no additional cost to you.</span>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="disclosure"><strong style="color:var(--rust);font-family:var(--body)">Affiliate Disclosure</strong><br>This website contains affiliate links, including to Amazon. As an Amazon Associate (or participant in a similar affiliate programme), we may earn from qualifying purchases made through links on this page, at no additional cost to you. Prices, availability, specifications and other details can change at any time — please check Amazon for the latest information before purchasing. This page is independently operated and is not affiliated with, endorsed by, or sponsored by Amazon or Canon.</div>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Canon RF 16-28mm F2.8 STM</div>
+        <p class="footer-desc">An independent guide for photographers researching the Canon RF 16-28mm F2.8 IS STM ultra-wide zoom lens for EOS R full-frame mirrorless cameras.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Page</h4>
+        <a href="#overview">Overview</a>
+        <a href="#specs">Specs</a>
+        <a href="#diagram">Build</a>
+        <a href="#uses">Use cases</a>
+      </div>
+      <div class="footer-col"></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Independent affiliate content.</span>
+      <span>Product names and trademarks belong to their respective owners.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){const m=document.getElementById('mobileMenu');m.style.display=m.style.display==='none'?'block':'none'}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
